@@ -1,0 +1,195 @@
+<!-- this code is for participants page -->
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Participants page</title>
+    <link rel="stylesheet" href="../css/style.css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" />
+</head>
+<body>
+    <div class="container">
+
+        <nav>
+            <div class="top-nav-img">
+                <img src="../imges/image.png" alt="">
+            </div>
+
+            <div class="nav-bottom">
+                <div class="btns">
+
+                    <button class="btn btnDashboard">                        
+                        <span class="material-symbols-outlined">
+                            dashboard
+                            </span>
+                            <style>
+                                .material-symbols-outlined {
+                                font-variation-settings:
+                                'FILL' 1,
+                                'wght' 400,
+                                'GRAD' 0,
+                                'opsz' 24
+                                }
+                                </style>
+                        
+                        Dshboard    
+                    </button>
+
+                    <button class="btn btnParticipants">                        
+                        <span class="material-symbols-outlined">
+                            groups
+                            </span>
+                            Participants
+                    </button>
+
+                    <button class="btn btnClassification">
+                        <span class="material-symbols-outlined">
+                            dashboard_customize
+                            </span>
+                        Classification
+                    </button>
+                </div>
+                
+                <div class="nav-logout">
+                    <span class="material-symbols-outlined logout">
+                        logout
+                        </span>
+                    <button class="btnLogout"> log out </button>
+                </div>
+
+            </div>
+        </nav>
+
+        <section>
+            <header>
+                <div class="header-left">
+                    <span class="material-symbols-outlined searchIcon">
+                        search
+                        </span>
+                    <input type="text"  placeholder="search" id="MyInput" >
+                </div>
+                <div class="header-right">
+                    <div class="ring">
+                        <span class="material-symbols-outlined">
+                            notifications
+                            </span>
+                    </div>
+                    <div class="profilAccount">
+                        <span class="material-symbols-outlined Account">
+                            account_circle
+                            </span>
+                    </div>
+                </div>
+            </header>
+
+            <main>
+
+                <div class="main-top">
+
+                    <div class="main-top-left">
+                        <h3 class="TitleParticipants"> Participants </h3>
+                        <p class="textParticipants"> Welcome to task participants management </p>             
+                    </div>
+
+                    <div class="main-top-right">
+
+                        <button id="btnAddPrtcpnt">
+                            <span class="material-symbols-outlined">
+                            add
+                            </span>
+                            Add Participant
+                        </button>
+                    
+                    </div>
+                </div>
+
+                <div class="main-center">
+
+                    <div class="titlesContainers">
+
+                        <p>First Name</p>
+                        <p>Last Name</p>
+                        <p>Phone Number</p>
+                        <p>Email</p>
+                        <p>Role</p>
+                        <p>Status</p>
+                        
+                    </div>
+
+                    <div class="MyParticipantsList">
+                        <!-- this code here is writing by js -->
+                        <div class="MyListInfo">
+                            <p>karam</p>
+                            <p>bailla</p>
+                            <p>0541447804</p>
+                            <p>karambailla@gmail.com</p>
+                            <p>developer</p>
+                            <p>attend</p>
+                            <p><span class="material-symbols-outlined">
+                                more_horiz
+                                </span>
+                            </p>
+                        </div>                        
+                        <!-- this is the end of code js -->
+                    </div>
+                    
+
+                    <div class="containerinformation hide" id="RegisBox">
+
+                        <div class="containerinformationTop">
+
+                            <div class="containerinformationLeft">
+                                <label for="Name">Full Name :</label><br>
+                                <input type="text" id="Name" placeholder="Enter your name"><br>
+    
+                                <label for="tel">Phone Number :</label><br>
+                                <input type="tel" id="tel" placeholder="Enter Phone Number"><br>
+                                
+                                <label for="Role">Role :</label><br>
+                                <input type="text" id="Role" placeholder="Enter Full Role"><br>
+                                
+                                <label for="Skills">Skills :</label><br>
+                                <input type="text" id="Skills" placeholder="Enter Skills"><br>
+    
+                                <label for="Evaluation">Evaluation Score (optional) :</label><br>
+                                <input type="text" id="Evaluation" placeholder="Enter Evaluation Score">
+                            </div>
+
+                            <div class="containerinformationRight">
+                                <label for="email">Email :</label><br>
+                                <input type="email" id="email" placeholder="Enter your Email"><br>
+    
+                                <label for="Job">Job/Academic Status :</label><br>
+                                <input type="text" id="Job" placeholder="Enter Job/Academic Status"><br>
+                            
+                                <label for="Status">Status :</label><br>
+                                <!-- <input type="Email" placeholder="Enter your name"> -->
+                                <select name="" id="Status">
+                                    <option  selected disabled hidden>Attend</option>
+                                    <option >Active</option>
+                                    <option >Inactive</option>                                
+                                </select><br>
+    
+                                <label for="Event Participations">Event Participations :</label><br>
+                                <input type="text" id="Event Participations" placeholder="Enter Event Participations"><br>
+    
+                                <label for="Social Media Links">Social Media Links :</label><br>
+                                <input type="text" id="Social Media Links" placeholder="Enter Social Media Links">
+                            </div>
+                        </div>
+                        
+                        <div class="continforBottom">
+                            <button class="btnCancel" id="btnCancel">Cancel</button>
+                            <button class="btnSubmit" id="btnSubmit">Submit</button>
+                        </div>
+
+                    </div>
+                </div>
+            </main>
+        </section>
+    </div>
+    <script src="../js/app.js"></script>
+</body>
+</html>
