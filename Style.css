@@ -1,0 +1,460 @@
+*
+{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.container {
+    width: 100%;
+    height: 100vh;
+    background-color: pink;
+    display: flex;
+}
+
+nav {
+    width: 17%;
+    height: 100%;
+    background-color: rgb(42,55,68);
+}
+
+.top-nav-img {
+    width: 100%;
+    height: 20%;
+    background-color: rgb(42,55,68);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    border-bottom: solid 2px rgb(112, 112, 112);
+
+}
+
+.top-nav-img img {
+    width: 35%;
+    height: 35%;
+}
+
+.nav-bottom {
+    width: 100%;
+    height: 80%;
+    background-color: rgb(42,55,68);
+    /* background-color: aqua; */
+    padding: 10px 7px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.btns {
+    /* background-color: yellow; */
+    padding: 10px 0px;
+}
+
+.btn {
+    /* width: 70%; */
+    font-size: 1.1rem;
+    margin-bottom: 10px;
+    font-family:system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    border: none;
+    
+}
+
+.btn:hover {
+    color: rgb(255,255,255);
+    cursor: pointer;
+}
+
+.btnDashboard {
+    width: 80%;
+    padding: 5px 20px;
+    display: flex;
+    justify-content: space-evenly ;
+    align-items: center;
+    /* font-size: 1.1rem; */
+    color: rgb(166,162,162);
+    background-color: transparent;
+}
+
+.btnParticipants {
+    width: 90%;
+    padding: 5px 20px;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    font-size: 1.3rem;
+    color: #fff;
+    background-color: transparent;
+}
+
+.btnClassification {
+    width: 90%;
+    padding: 5px 20px;
+    display: flex;
+    justify-content: space-evenly ;
+    align-items: center;
+    color: rgb(166,162,162);
+    background-color: transparent;
+    font-size: 1.1rem;
+
+}
+
+.nav-logout {
+    width: 100%;
+    /* background-color: rgb(175, 40, 62); */
+    padding: 10px 30px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    cursor: default;
+}
+
+.nav-logout:hover {
+    background-color: rgb(146, 144, 144);
+}
+
+.logout {
+    color: #000;
+    background-color: #fff;
+    padding: 5px;
+    border-radius: 50%;
+    /* cursor: pointer; */
+}
+
+.btnLogout {
+    padding: 5px 20px;
+    font-size: 1.1rem;
+    background-color: transparent;
+    border: none;
+    color: #fff;
+    /* cursor: pointer; */
+}
+
+section {
+    width: 83%;
+    height: 100%;
+    background-color: #624c4c;
+}
+
+header {
+    width: 100%;
+    height: 10%;
+    background-color: #fff;
+    padding: 15px 20px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    border-bottom: solid 2px grey;
+}
+
+.header-left {
+    background-color: rgb(242,242,242);
+    
+    width: 30%;
+    padding: 5px 10px;
+    display: flex;
+    align-items: center;
+    border-radius: 3px;
+    
+}
+
+.searchIcon {
+    color: #969494;
+}
+
+#MyInput {
+    padding: 7px 10px;
+    width: 100%;
+    border: none;
+    outline: none;
+    background: transparent;
+    font-size: 1.1rem;
+}
+
+
+.header-right {
+    width: 15%;
+    height: 100%;
+    /* background-color: red; */
+    padding: 25px 15px;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.ring {
+    /* background-color: blue; */
+    /* display: inline; */
+    padding: 5px;
+    border-radius: 50%;
+}
+.ring:hover {
+    cursor: pointer;
+}
+
+.profilAccount {
+    /* background-color: beige; */
+    padding: 10px 0;
+}
+
+.profilAccount .Account {
+    font-size: 2.2rem;
+}
+
+.profilAccount .Account:hover {
+    cursor: pointer;
+}
+
+
+main {
+    width: 100%;
+    height: 90%;
+    /* background-color: yellowgreen; */
+    background-color: #fff;
+    padding: 20px 30px;
+    position: relative;
+    
+}
+
+.main-top {
+    width: 100%;
+    height: 15%;
+    /* background-color: gray; */
+    padding: 5px 10px;
+    margin-bottom: 30px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+
+.TitleParticipants {
+    font-size: 1.4rem;
+    margin-bottom: 5px;
+    font-family:sans-serif;
+    cursor: default;
+    
+}
+
+.textParticipants {
+    font-size: 1.1rem;
+    font-family:sans-serif;
+    opacity: 0.5;
+    cursor: default;
+
+    /* color: ; */
+}
+
+.main-top-right {
+    /* background-color: green; */
+    padding: 5px 10px;
+}
+
+#btnAddPrtcpnt {
+    padding: 10px 15px;
+    background-color: rgb(71,81,90);
+    color: #fff;
+    border-radius: 18px;
+    border: none;
+    display: flex;
+    align-items: center;
+    font-size: 1.1rem;
+    cursor: pointer;
+}
+
+#btnAddPrtcpnt:hover {
+    background-color: rgb(101, 113, 126);
+}
+
+#btnAddPrtcpnt:active {
+    background-color: rgb(71,81,90);
+}
+
+.main-center {
+    width: 100%;
+    height: 75%;
+    /* background-color: orange; */
+    background-color: rgb(240, 240, 240);
+    border-radius: 10px;
+}
+
+.titlesContainers {
+    width: 100%;
+    height: 10%;
+    /* background-color: #624c4c; */
+    padding: 5px 20px 10px 20px;
+    display: flex;
+    /* justify-content: space-evenly; */
+}
+
+
+.titlesContainers p {
+    /* background-color: yellow; */
+    /* margin-right: 10px; */
+    margin-left: 2%;
+    font-size: 1.1rem;
+    font-weight: bold;
+    font-family:system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    color: #4b4b4b;
+    cursor: default;
+}
+
+.titlesContainers p:nth-child(2) {
+    margin-left: 6%;
+}
+
+.titlesContainers p:nth-child(3) {
+    margin-left: 6%;
+}
+
+.titlesContainers p:nth-child(4) {
+    margin-left: 8%;
+}
+
+.titlesContainers p:nth-child(5) {
+    margin-left: 11%;
+}
+
+.titlesContainers p:last-child {
+    margin-left: 10%;
+}
+
+.MyParticipantsList {
+    width: 100%;
+    height: 88%;
+    /* background-color: rgb(58, 101, 146); */
+    padding: 10px 20px;
+}
+
+.MyListInfo {
+    width: 100%;
+    padding: 5px 40px;
+    border-radius: 15px;
+    background-color: rgb(255, 255, 255);
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 10px;
+}
+
+.MyListInfo p {
+    cursor: default;
+    padding: 10px;
+}
+
+.MyListInfo p:last-child {
+    cursor: pointer;
+    padding-top: 10px;
+}
+
+.containerinformation {
+    width: 65%;
+    height: 95%;
+    background-color: rgb(255, 253, 253);
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    padding: 0 50px;
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    border: solid 2px rgb(212, 211, 211);
+    border-radius: 10px;
+    box-shadow: 8px 19px 19px rgb(159, 159, 159);
+}
+
+.hide {
+    display: none;
+}
+
+.play {
+    display: block;
+}
+
+.containerinformationTop {
+    /* background-color: plum; */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 5px 30px;
+}
+
+.containerinformationLeft , .containerinformationRight {
+    /* background-color: gold; */
+    /* display: inline; */
+    margin-left: 15px;
+}
+
+.containerinformationLeft input , .containerinformationRight input {
+    border-top: none;
+    border-left: none;
+    border-right: none;
+    border-bottom: 2px solid rgb(172, 172, 172);
+    padding: 10px 0px;
+    margin-bottom: 25px;
+    background-color: transparent;
+    outline: none;
+    display: inline;
+    /* background-color: green; */
+
+}
+
+#Status {
+    width: 80%;
+    padding: 2px 4px;
+    /* height: 100%; */
+    margin-bottom: 25px;
+    margin-top: 15px;
+    cursor: pointer;
+    outline: none;
+}
+
+.continforBottom {
+    /* background-color: darkblue; */
+    margin-top: 12px;
+    padding: 5px 2px;
+    display: flex;
+    justify-content: flex-end;
+}
+
+
+.btnCancel {
+    /* height: 5%; */
+    padding: 5px 15px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: rgb(245, 245, 245);
+    border-radius: 3px;
+    border: solid 1px rgb(206, 201, 201);
+    cursor: pointer;
+    margin-right: 1%;
+}
+
+.btnCancel:hover {
+    background-color: rgb(215, 215, 215);
+}
+
+.btnCancel:active {
+    background-color: rgb(226, 226, 226);
+}
+
+.btnSubmit {
+    padding: 5px 15px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: rgb(102, 131, 163);
+    color: #fff;
+    border-radius: 3px;
+    border: solid 1px rgb(206, 201, 201);
+    cursor: pointer;   
+}
+
+.btnSubmit:hover {
+    background-color: rgb(84,99,114);
+}
+
+.btnSubmit:active {
+    background-color: rgb(112, 126, 140);
+}
