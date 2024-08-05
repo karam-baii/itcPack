@@ -57,12 +57,12 @@ nav {
     margin-bottom: 10px;
     font-family:system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
     border: none;
-    
 }
 
 .btn:hover {
     color: rgb(255,255,255);
     cursor: pointer;
+    opacity: 1;
 }
 
 .btnDashboard {
@@ -72,8 +72,14 @@ nav {
     justify-content: space-evenly ;
     align-items: center;
     /* font-size: 1.1rem; */
-    color: rgb(166,162,162);
+    color: #fff;
+    opacity: 0.6;
     background-color: transparent;
+}
+
+.btn a {
+    text-decoration: none;
+    color: #fff;
 }
 
 .btnParticipants {
@@ -93,10 +99,10 @@ nav {
     display: flex;
     justify-content: space-evenly ;
     align-items: center;
-    color: rgb(166,162,162);
+    color: #fff;
+    opacity: 0.6;
     background-color: transparent;
     font-size: 1.1rem;
-
 }
 
 .btnLogout {
@@ -192,7 +198,6 @@ main {
     background-color: #fff;
     padding: 20px 30px;
     position: relative;
-    
 }
 
 .main-top {
@@ -211,7 +216,6 @@ main {
     margin-bottom: 5px;
     font-family:sans-serif;
     cursor: default;
-    
 }
 
 .textParticipants {
@@ -219,8 +223,6 @@ main {
     font-family:sans-serif;
     opacity: 0.5;
     cursor: default;
-
-    /* color: ; */
 }
 
 .main-top-right {
@@ -269,7 +271,6 @@ main {
 
 .titlesContainers p {
     /* background-color: yellow; */
-    /* margin-right: 10px; */
     margin-left: 2%;
     font-size: 1.1rem;
     font-weight: bold;
@@ -316,7 +317,6 @@ main {
     justify-content: space-between;
     align-items: center;
     margin-bottom: 10px;
-    
 }
 
 .MyListInfo p {
@@ -514,7 +514,6 @@ main {
     font-size: 1rem;    
     margin-top: 8px;
     color: #4d4d4d;
-    
 }
 
 .FeddbackContainer {
@@ -563,7 +562,6 @@ main {
     margin-top: 5px;
     margin-left: 30px;
     margin-right: 30px;
-
 }
 
 /* this is the style of delete div */
@@ -612,7 +610,6 @@ form .user .inpubox{
 select {
     height: 30px;
     width: 90%;
-    
 }
 
 span {
@@ -662,18 +659,15 @@ form .button #cancelButton {
 
 form .button #cancelButton:active {
     background-color: #dcdcdc;
-
 }
 
 p {
     font-size: 20px;
     color: #171E25;
-
 }
 
 b {
     color:  #303F4E;
-    
 }
 
 .pi {
@@ -684,4 +678,4 @@ b {
     color: #82888e;
 }
 
-/* this is the end of style delete div */
+/* this is the end of style delete , Edit & Add Note  div */
