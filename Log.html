@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Log in ITC</title>
+    <link rel="stylesheet" href="../logInCss/log.css">
+</head>
+<body>
+    
+    <main>
+        <div class="main-Left">
+            <img src="../imgLogIn/img-log-ITC.png" alt="">
+        </div>
+
+        <div class="main-right">
+            <div class="logInContainer">
+
+                <div class="logo-itc-top">
+                    <img src="../imgLogIn/logo-ITCPACK.png" alt="">
+                    <p>Admin</p>
+                </div>
+
+                <label for="email">E-mail </label>
+                <input type="email" id="email" placeholder="Enter your e-mail" autocomplete="on"><br><br>
+
+                <label for="Password" id="PasswordText">Password </label>
+                <input type="password" id="Password" placeholder="Enter your Password"><br><br>
+
+                <button class="LogoBtn"><a href="#">Log In</a></button>
+                <br><br>
+
+                <p class="Text-admin">Not Admin yet ?</p> <a class="Request" id="Request" href="#" onclick="change()"> Request access </a>
+
+            </div>
+        </div>
+    </main>
+    <script src="../logInJS/log.js"></script>
+</body>
+</html>
