@@ -1,0 +1,246 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dashboard</title>
+
+    <!-- link css -->
+    <link rel="stylesheet" href="../css/DashboardUpdate.css">
+    <link rel="stylesheet" href="../css/DashboardD.css">
+
+    <!-- Material symbol for sidebar  -->
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" />
+
+
+    
+    <!-- Material Icons -->
+    <link href="https://fonts.googleapis.com/css2?family=Material+Icons+Outlined" rel="stylesheet">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" />
+
+    <!-- Material Symbols (for testing finance_mode) -->
+    <!-- <link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined" rel="stylesheet"> -->
+
+</head>
+<body>
+    
+<div class="container">
+
+    <!-- start of sidebar / left side -->
+    <nav id="sidebar" class="sidebar-responsive-open">
+        <div class="top-nav-img">
+            <img src="../imges/Screenshot 2024-07-25 034459.png" alt="">
+        </div>
+
+        <div class="nav-bottom">
+            <div class="btns">
+
+                <button class="btn btnDashboard">                        
+                    <span class="material-symbols-outlined">
+                        dashboard
+                        </span>
+                        <style>
+                            .material-symbols-outlined {
+                            font-variation-settings:
+                            'FILL' 1,
+                            'wght' 400,
+                            'GRAD' 0,
+                            'opsz' 24
+                            }
+                            </style>
+                    
+                    <a href="#">Dashboard</a>    
+                </button>
+
+                <button class="btn btnParticipants">                        
+                    <span class="material-symbols-outlined">
+                        groups
+                        </span>
+                        <a href="file:///C:/Users/KM-USER/Desktop/ItcPack/html/index.html">Participants</a>
+                </button>
+
+                <button class="btn btnClassification">
+                    <span class="material-symbols-outlined">
+                        dashboard_customize
+                        </span>
+                    <a href="#">Classification</a>
+                </button>
+            </div>
+
+            <button class="btn btnLogout">
+                <span class="material-symbols-outlined">
+                    logout
+                    </span>
+                    <a href="file:///C:/Users/KM-USER/Desktop/LogIn%20Itc%20Pack/logInHTML/Log.html#">log out</a>
+            </button>
+
+        </div>
+    </nav>
+    <!-- end of sideBar / left side -->
+
+
+    <!-- start of header / right side -->
+    <section id="MySection">
+        <header>
+            <div class="header-left">
+                <span class="material-symbols-outlined" id="btnMenu">
+                    menu
+                    </span>
+                <span class="material-symbols-outlined searchIcon">
+                    search
+                    </span>
+                <input type="text"  placeholder="search now" id="MyInput" >
+            </div>
+            <div class="header-right">
+                <div class="ring">
+                    <span class="material-symbols-outlined">
+                        notifications
+                        </span>
+                </div>
+                <div class="profilAccount">
+                    <span class="material-symbols-outlined Account">
+                        account_circle
+                        </span>
+                </div>
+            </div>
+        </header>
+
+
+        <!-- start main dashboard -->
+    <main>
+
+        <!-- start main left -->
+        <div class="main-left">
+
+            <h3>Dashboard</h3>
+
+            <p class="textWelcome">Welcome to task management dashboard</p>
+
+            <div class="welcome-Content">
+                <div class="left-imgContain">
+                    <img src="../imges/imgPersonDashboar.png" alt="">
+                </div>
+
+                <div class="welcome-text-right">
+                    <p>Hi, Badji Kaouther </p>
+                    <h1>Welcome Back !</h1>
+                    <p>Project activity and statistic will be updated here.</p>
+                </div>
+            </div>
+
+            <h3>Event Summary</h3><br>
+            <div class="event-summary-container">
+
+                <div class="event-summary-left box">
+                    <span class="material-symbols-outlined icon-groups">
+                        groups
+                        </span>
+                    <p class="num">30<p>
+                    <p>Total Participants</p>
+                </div>
+
+                <div class="event-summary-center box">
+                    <span class="material-symbols-outlined icon-finance-mode">
+                        finance_mode
+                        </span>
+                    <p class="num">10%</p>
+                    <p>Performance Gains</p>
+                </div>
+
+                <div class="event-summary-right box">
+                    <span class="material-symbols-outlined icon-space-dashboard">
+                        space_dashboard
+                        </span>
+                    <p class="num">10</p>
+                    <p>Average Event Score</p>
+                </div>
+                
+            </div>
+            <br>
+            <h3>Participant Data Visualization</h3>
+                        <div class="chart-wrapper">
+                            <div class="chart-card">
+                                <div class="chart-section">
+                                    <!-- Event Performance Container -->
+                                    <div class="chart-container">
+                                        <div class="chart-title">Event Performance</div>
+                                        <canvas id="eventPerformanceChart"></canvas>
+                                        <div id="eventPerformanceLegend" class="legend-container"></div>
+                                    </div>
+                    
+                                    <!-- Divider Line -->
+                                    <div class="divider"></div>
+                    
+                                    <!-- Top Majors Container -->
+                                    <div class="chart-container">
+                                        <div class="chart-title">Top Majors</div>
+                                        <canvas id="topMajorsChart"></canvas>
+                                        <div class="center-text">12</div>
+                                        <div id="topMajorsLegend" class="legend-container"></div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+
+
+
+        </div>
+        <!-- end  main left -->
+
+
+
+
+        <!-- start main Right -->
+        <div class="main-right">
+            <h1>Calendar</h1>
+            <br>
+            <div class="dycalendar" id="dycalendar"></div>
+                <div class="schedule">
+                        <h1>Schedule</h1>
+                        <a href="#" class="view-all">View All</a>
+                    <div class="schedule-item">
+                        <h3>Opening Ceremony</h3>
+                        <p>16:00 - 16:15</p>
+                    </div>
+                    <div class="schedule-item">
+                        <h3>Challenge Introduction</h3>
+                        <p>16:15 - 16:30</p>
+                    </div>
+                    <div class="schedule-item">
+                        <h3>Team Building</h3>
+                        <p>16:15 - 16:30</p>
+                    </div>
+                    <div class="add">
+                        <a href="#" id="plus"><span class="material-symbols-outlined">add</span>Add</a>
+                    </div>
+                </div>
+            
+        </div>
+        <!-- end main right -->
+     </main>
+     <!-- end main dashboard-->        
+    </section>
+    <!-- end of header / right side  -->
+</div>
+<!-- end of container -->
+
+
+
+
+    <!-- DyCalendar JS -->
+    <script src="https://cdn.jsdelivr.net/npm/dycalendarjs@1.2.1/js/dycalendar.js"></script>
+    <script src="../js/DashbordD.js"></script>
+
+    <!-- ApexCharts -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/apexcharts/3.35.3/apexcharts.min.js"></script>
+
+     <!-- Custom JS -->
+    <script src="../js/Dashboard.js"></script>
+    <!-- Custom JS Calendar -->
+    <script src="../js/DashbordD.js"></script>
+    <!-- Chart Js-->
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+    <script src="chart.js"></script>
+</body>
+</html>
